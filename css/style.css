@@ -1,3 +1,46 @@
+/* Reset CSS léger */
+
+/* Remise à zéro des marges et des rembourrages */
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remise à zéro des bordures */
+img, iframe, embed, object, video {
+  border: 0;
+}
+
+/* Remise à zéro de la taille de police et de la famille de police */
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* Remise à zéro des styles de liste */
+ul, ol {
+  list-style: none;
+}
+
+/* Remise à zéro des styles de lien */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remise à zéro de la taille de la boîte de saisie de formulaire */
+input, textarea, button, select {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/* Remise à zéro des styles de bouton */
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+}
 /****** General ***********/
 * {
   font-family: 'Raleway', sans-serif;
@@ -182,7 +225,7 @@ form {
 .search-bar--button {
   font: 700 18px "Raleway", sans-serif;
   color: white;
-  background: var(--main-blue);
+  background: #0065FC;
   padding: 14px 16px;
   border: none;
   border-radius: 0 15px 15px 0;
@@ -290,7 +333,7 @@ form {
   box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** HEBERGEMENTS SECTION ***********/
 .hebergements {
   width: 65%;
 }
@@ -300,6 +343,7 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .hebergements-cards{
@@ -313,18 +357,23 @@ form {
 
 .hebergements-cards .card {
   display: flex;
-  margin-top: 33px;
+  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1 0 0;
+  border-radius: 20px;
+  background: #FFF;
 }
 
 .hebergements-cards img {
-  width: 33%;
+  width: 100%;
   height: 136px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
 }
 
 .hebergements-cards .card-content {
-  width: 67%;
+  width: 100%;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
@@ -334,7 +383,7 @@ form {
 
 .hebergements-cards .card-title {
   margin-top: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 .hebergements-cards .card-subtitle {
@@ -346,7 +395,7 @@ form {
 }
 
 
-/****** Populaires ***********/
+/****** POPULAIRES SECTION ***********/
 .populaires {
   width: 32%;
 }
@@ -391,13 +440,22 @@ form {
   margin-bottom: 5px;
 }
 
-/********** ACTVITÉES À MARSEILLE **********/
+.show-more__btn {
+  font:  700 18px "Raleway", sans-serif;;
+  margin-top: 40px;
+  margin-left: 4px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/********** ACTVITÉS À MARSEILLE SECTION **********/
 .activities {
   margin: 60px 53px 61px 50px;
 }
 
 .activities h2 {
-  font:  700 22px "Raleway", sans-serif;
+  font:  700 22px;
   margin-bottom: 18.47px;
 }
 
@@ -424,7 +482,7 @@ form {
 }
 
 .card__description--activity h3 {
-  font:  700 16px "Raleway", sans-serif;
+  font:  700 16px;
   padding: 20px 36px 21px 19px;
 }
 
@@ -436,7 +494,35 @@ form {
 .card__activity:nth-child(-n + 3) {
   margin-right: 43px;
 }
+/********** FOOTER SECTION **********/
+footer {
+  display: flex;
+  padding: 30px 0px 24px 55px;
+  margin-bottom: 27px;
+}
 
+footer h3 {
+  font:  700 18px "Raleway", sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer__column {
+  width: 30%;
+}
+
+.link-list li {
+  margin-bottom: 12px;
+}
+
+.link-list a {
+  text-decoration: none;
+  color: var(--black);
+  font:  400 16px "Raleway", sans-serif;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
