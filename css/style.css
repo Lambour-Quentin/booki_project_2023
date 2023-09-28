@@ -146,6 +146,7 @@ nav {
 .nav__logo img {
     width: 61.09px;
     height: 19px;
+    object-fit: cover;
 }
 
 nav ul {
@@ -155,7 +156,8 @@ nav ul {
     /* height: 100px; */
     margin: 0;
     padding: 0;
-    height: 60%;
+    height: 100%;
+    width: 100%;
 }
 
 nav li {
@@ -163,10 +165,11 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 100%;
     height: 100%;
     text-align: center;
     border-top: 3px solid transparent;
+    min-width: 150px;
 }
 
 nav li:hover {
@@ -218,7 +221,7 @@ form {
     display: flex;
     border: 1px solid var(--font-color);
     display: flex;
-    width: 418px;
+    width: 100%
 }
 
 #search-bar--icon {
@@ -228,16 +231,17 @@ form {
     justify-content: center;
     align-items: center;
     border-radius: 15px 0 0 15px;
+    background: #F2F2F2;
 }
 
 .input-search input {
     font: 700 18px "Raleway", sans-serif;
     border: none;
     outline: none;
-    width: 60%;
+    min-width: 10px;
     border: 2px solid var(--grey);
-    border-radius: 15px 0 0;
     background: var(--grey) padding-left: 17px;
+    padding-left: 15px;
 }
 
 .input-search input::placeholder {
@@ -298,6 +302,7 @@ form {
     padding: 4px 20px;
 }
 
+
 .filter-bar__btn:active {
     transform: translateY(2px);
 }
@@ -309,7 +314,7 @@ form {
 }
 
 .filter-bar__btn:hover {
-    background-color: var(--light-blue);
+    background-color: #DEEBFF;
     cursor: pointer;
 }
 
@@ -320,6 +325,7 @@ form {
     flex-direction: row;
     align-items: center;
     margin-left: 5px;
+    margin-bottom: 35px;
 }
 
 .info-bar p {
@@ -352,9 +358,10 @@ form {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 0px;
     padding: 30px;
     box-sizing: border-box;
+    gap: 20px;
 }
 
 /****** HEBERGEMENTS SECTION ***********/
@@ -396,7 +403,8 @@ form {
 .hebergements-cards img {
     width: 100%;
     height: 136px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .hebergements-cards .card-content {
@@ -435,7 +443,7 @@ form {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 15px;
 }
 
 .populaires-cards img {
@@ -443,6 +451,7 @@ form {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 .populaires-cards .card-content {
@@ -504,11 +513,13 @@ form {
     width: 100%;
     height: 389px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 .card__description--activity h3 {
     font: 700 16px;
-    padding: 20px 36px 21px 19px;
+    padding: 8px 8px 11px 12px;
+    font-size: 16px;
 }
 
 .activities-row {
@@ -525,7 +536,6 @@ form {
 footer {
     display: flex;
     padding: 30px 0 24px 55px;
-    margin-bottom: 27px;
     justify-content: space-between;
 }
 
@@ -572,7 +582,9 @@ footer h3 {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .populaires-cards {
@@ -600,7 +612,6 @@ footer h3 {
   header {
     display: block;
     justify-content: space-between;
-    height: 0%;
     margin-bottom: 29px;
 }
   .nav__logo {
@@ -614,11 +625,13 @@ footer h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     align-self: stretch;
+    height: 60px;
 }
 .input-search input{
-    width: initial;
+    width: 100%;
 }
 
 .search-bar__titles {
@@ -629,10 +642,9 @@ footer h3 {
 
   .populaires-cards {
     display: flex;
-    padding: 30px 20px;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
     align-self: stretch;
   }
   .populaires-cards a {
@@ -657,7 +669,7 @@ footer h3 {
   }
 
   .filter-bar__btn{
-    flex: 1 1 47%;
+    width: 47%;
     font-size: 14px;
     justify-content: flex-start;
     padding: 4px 16px;
@@ -673,13 +685,14 @@ footer h3 {
     border-radius: 15px 15px 15px 15px;
 }
   .search-bar__container {
-    padding: 10%;
+    padding: 20px;
 }
 .info-bar__container{
   width: 0%;
 }
   .hebergements {
       order: 2;
+      background-color: white;
 }
    .hebergements-cards {
     display: flex;
@@ -692,10 +705,8 @@ footer h3 {
 .hebergements-cards a {
   width: 100%;
 }
-
   .activities{
-    margin: 50px 20px 0px 20px;
-    padding: 0px;
+    padding: 30px;
   }
   .activities-row {
     display: flex;
