@@ -240,7 +240,6 @@ form {
     outline: none;
     min-width: 10px;
     border: 2px solid var(--grey);
-    background: var(--grey);
     padding-left: 15px;
 }
 
@@ -354,6 +353,7 @@ form {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -574,6 +574,7 @@ footer h3 {
 @media(max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        gap: 30px;
     }
 
     .hebergements {
@@ -683,6 +684,7 @@ footer h3 {
 }
 .search-bar--button {
     border-radius: 15px 15px 15px 15px;
+    margin-left: -8px
 }
   .search-bar__container {
     padding: 20px;
