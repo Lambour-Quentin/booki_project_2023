@@ -240,7 +240,7 @@ form {
     outline: none;
     min-width: 10px;
     border: 2px solid var(--grey);
-    background: var(--grey) padding-left: 17px;
+    background: var(--grey);
     padding-left: 15px;
 }
 
@@ -525,7 +525,7 @@ form {
 .activities-row {
     display: flex;
     flex-direction: row;
-    . justify-content: space-between;
+    justify-content: space-between;
     gap: 30px;
 }
 
