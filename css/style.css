@@ -307,7 +307,6 @@ form {
 }
 
 .filter-bar i {
-    color: var(--main-blue);
     font-size: 22px;
     margin-right: 10px;
 }
